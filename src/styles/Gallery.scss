@@ -1,0 +1,111 @@
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes de taille égale */
+  grid-template-rows: repeat(
+    3,
+    auto
+  ); /* 3 rangées auto-ajustables en hauteur */
+  row-gap: 100px;
+  column-gap: 100px;
+  padding: 120px;
+  background: url('./sheet.jpg');
+  z-index: 0;
+
+  .gallery-card {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .gallery-card {
+    transition: opacity 1s ease-in-out;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+
+    .gallery-thumbnail {
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.466);
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .gallery-thumbnail:hover {
+      box-shadow: 0 0px 5px rgba(255, 255, 255, 0.767);
+    }
+
+    .gallery-info {
+      margin-top: 10px;
+      background-color: #080808ab;
+      border-radius: 5px;
+      box-shadow: 0 0px 15px rgba(0, 0, 0, 0.767);
+      backdrop-filter: blur(20px);
+      padding: 16px;
+    }
+
+    .gallery-info h3 {
+      margin: 0 0 8px 0;
+      font-size: 15px;
+    }
+
+    .gallery-info p {
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .instrument {
+      position: absolute;
+      width: 150px;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    .instrument-right {
+      top: -30%;
+      right: -70px;
+      transform: translateY(50%) translateX(0px) rotate(0deg);
+      z-index: 0;
+    }
+
+    &:hover .instrument-right {
+      opacity: 1;
+      z-index: 1;
+      transform: translateY(50%) translateX(50px) rotate(20deg);
+    }
+
+    .instrument-left {
+      top: -30%;
+      left: -70px;
+      transform: translateY(50%) translateX(0px) rotate(0deg);
+      z-index: 0;
+    }
+
+    &:hover .instrument-left {
+      opacity: 1;
+      z-index: 1;
+      transform: translateY(50%) translateX(-50px) rotate(-20deg);
+    }
+  }
+
+  .gallery-card:hover {
+    transform: scale(1);
+  }
+}

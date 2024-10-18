@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.background-grid {
+  background: url("./fond-proj4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 20%;
+  background-size: cover;
+}
+.background-grid .project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 4 colonnes de taille égale */
+  grid-template-rows: repeat(3, auto); /* 3 rangées auto-ajustables en hauteur */
+  gap: 150px;
+  padding: 120px 400px 120px 120px;
+}
+.background-grid .project-grid .project-card {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.background-grid .project-grid .fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.background-grid .project-grid .project-card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: rgba(8, 8, 8, 0.5137254902);
+  border-radius: 3px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.767);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  position: relative;
+}
+.background-grid .project-grid .project-card .project-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 0px 30px;
+}
+.background-grid .project-grid .project-card .project-container .project-title {
+  margin: 0 0 8px 0;
+}
+.background-grid .project-grid .project-card .project-container .description-info {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 400px;
+  padding-right: 400px;
+}
+.background-grid .project-grid .project-card .project-container .description-info .img-info {
+  margin-top: 25px;
+  align-self: center;
+  width: 700px;
+}
+.background-grid .project-grid .project-card .youtube-info {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: -100px;
+  top: 0;
+  margin-top: 85px;
+}
+.background-grid .project-grid .project-card .youtube-info .project-thumbnail {
+  border-radius: 10px;
+  width: auto;
+  height: 250px;
+  transition: transform 0.2s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.76);
+}
+.background-grid .project-grid .project-card .youtube-info .project-thumbnail:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.699);
+}/*# sourceMappingURL=Projects.css.map */
