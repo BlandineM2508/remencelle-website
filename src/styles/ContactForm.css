@@ -1,0 +1,97 @@
+.sectionContact {
+  padding: 120px 20px;
+  background: url("./PercuBack.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+.sectionContact .CatchPhrase {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #252525, 1px -1px 0 #1a1a1a, -1px 1px 0 #141414, 1px 1px 0 #161616;
+}
+.sectionContact .contactContainer {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(12, 12, 12, 0.9);
+  border-radius: 8px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.411);
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+.sectionContact .contactContainer .titleContainer {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.sectionContact .contactContainer form {
+  display: flex;
+  flex-direction: column;
+}
+.sectionContact .contactContainer form .formContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sectionContact .contactContainer form .formContainer label {
+  font-size: 1em;
+  color: #cccccc;
+  margin-bottom: 5px;
+}
+.sectionContact .contactContainer form .formContainer input,
+.sectionContact .contactContainer form .formContainer textarea {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.sectionContact .contactContainer form .formContainer input:focus,
+.sectionContact .contactContainer form .formContainer textarea:focus {
+  border-color: #999999;
+}
+.sectionContact .contactContainer form .formContainer textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.sectionContact .contactContainer form button {
+  text-align: center;
+  justify-content: center;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.sectionContact .contactContainer form button:hover {
+  text-shadow: 0 0 0px white, 0 0 5px white, 0 0 10px white;
+}
+.sectionContact .contactContainer .successMsg {
+  color: #4caf50;
+  margin-top: 10px;
+  text-align: center;
+}
+.sectionContact .contactContainer .errorMsg {
+  color: #ff4d4d;
+}/*# sourceMappingURL=ContactForm.css.map */

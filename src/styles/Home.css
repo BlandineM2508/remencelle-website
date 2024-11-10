@@ -2,6 +2,8 @@
 .home-container {
   background-image: url("/background.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: 20%;
   background-position: flex-start;
   background-repeat: no-repeat;
   display: flex;
@@ -13,14 +15,20 @@
   height: 1200px;
 }
 .home-container .hero {
-  margin-top: 100px;
+  margin: 100px 0px 0px 0px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   border-radius: 8px;
 }
+.home-container .hero h1 {
+  margin-bottom: 40px;
+}
+.home-container .hero p {
+  margin-bottom: 20px;
+}
 .home-container .hero .social-links a {
-  margin: 0 10px;
+  margin: 0 25px;
 }
 .home-container .hero .social-links a .logo {
   width: 50px;
@@ -29,9 +37,4 @@
 }
 .home-container .hero .social-links a .logo:hover {
   cursor: pointer;
-}
-.home-container .hero .heroName {
-  font-family: "Playwrite CU", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
 }/*# sourceMappingURL=Home.css.map */

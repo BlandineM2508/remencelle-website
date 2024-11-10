@@ -2,18 +2,22 @@
   display: flex;
   justify-content: center;
   padding: 0 100px;
-}
-.container .photo {
-  display: flex;
-  width: 300px;
-  height: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.856);
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 .container .description {
   margin: 100px 50px;
   text-align: justify;
-  background-color: rgba(12, 12, 12, 0.795);
+  background-color: rgba(12, 12, 12, 0.9);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
   padding: 30px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=Biography.css.map */

@@ -24,3 +24,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+* {
+  font-family: 'Lexend Deca', system-ui;
+  font-weight: 200;
+}
+
+.heroName-font {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}

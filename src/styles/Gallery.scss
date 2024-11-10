@@ -10,6 +10,8 @@
   padding: 120px;
   background: url('./sheet.jpg');
   z-index: 0;
+  background-attachment: fixed;
+  background-position: 20%;
 
   .gallery-card {
     opacity: 0;
@@ -53,7 +55,7 @@
 
     .gallery-info {
       margin-top: 10px;
-      background-color: #080808ab;
+      background-color: rgba(12, 12, 12, 0.9);
       border-radius: 5px;
       box-shadow: 0 0px 15px rgba(0, 0, 0, 0.767);
       backdrop-filter: blur(20px);

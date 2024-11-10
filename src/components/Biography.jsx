@@ -1,10 +1,8 @@
-import photo from '../assets/remoute.jpg'
 import '../styles/Biography.scss'
 
 function Biography() {
   return (
     <div className="container">
-      <img className="photo" src={photo} alt="photo de Remi Encelle" />
       <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

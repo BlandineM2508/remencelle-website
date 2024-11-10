@@ -1,0 +1,112 @@
+.sectionContact {
+  padding: 120px 20px;
+  background: url('./PercuBack.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+
+  .CatchPhrase {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #252525, 1px -1px 0 #1a1a1a, -1px 1px 0 #141414,
+      1px 1px 0 #161616;
+  }
+
+  .contactContainer {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(12, 12, 12, 0.9);
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.411);
+    opacity: 0; // Initialement invisible
+    animation: fadeIn 0.8s ease-in-out forwards; // Animation de fondu
+
+    .titleContainer {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    // Animation de fondu en CSS
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .formContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        label {
+          font-size: 1em;
+          color: #cccccc;
+          margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+          background-color: #333333;
+          color: #ffffff;
+          border: 1px solid #444444;
+          border-radius: 4px;
+          padding: 10px;
+          font-size: 1em;
+          outline: none;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            border-color: #999999;
+          }
+        }
+
+        textarea {
+          resize: vertical;
+          min-height: 100px;
+        }
+      }
+
+      button {
+        text-align: center;
+        justify-content: center;
+        background-color: #111111;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+
+        &:hover {
+          text-shadow: 0 0 0px white, 0 0 5px white, 0 0 10px white;
+        }
+      }
+    }
+
+    .successMsg {
+      color: #4caf50;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .errorMsg {
+      color: #ff4d4d;
+    }
+  }
+}

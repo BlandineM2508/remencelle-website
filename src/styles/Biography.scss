@@ -2,20 +2,25 @@
   display: flex;
   justify-content: center;
   padding: 0 100px;
-
-  .photo {
-    display: flex;
-    width: 300px;
-    height: auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.856);
-  }
+  opacity: 0; // Initialement invisible
+  animation: fadeIn 0.8s ease-in-out forwards; // Animation de fondu
 
   .description {
     margin: 100px 50px;
     text-align: justify;
-    background-color: rgba(12, 12, 12, 0.795);
+    background-color: rgba(12, 12, 12, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
     padding: 30px;
+  }
+
+  // Animation de fondu en CSS
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

@@ -17,7 +17,7 @@
 
     .project-card {
       opacity: 0;
-      transition: opacity 1s ease-in-out;
+      transition: opacity 0.8s ease-in-out;
     }
 
     .fade-in {
@@ -38,10 +38,9 @@
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
-      background-color: #08080883;
+      background-color: rgba(12, 12, 12, 0.9);
       border-radius: 3px;
       box-shadow: 0 0px 15px rgba(0, 0, 0, 0.767);
-      backdrop-filter: blur(20px);
       position: relative;
 
       .project-container {
