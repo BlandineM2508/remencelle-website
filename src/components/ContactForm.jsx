@@ -32,16 +32,16 @@ function ContactForm() {
     if (validateForm()) {
       const templateParams = {
         name: formData.name,
-        email: formData.email,
+        email: formData.email, // inclut l'email de l'expéditeur
         message: formData.message,
       }
 
       emailjs
         .send(
-          'service_5msn4n9',
-          'template_jutqirh',
+          'service_5msn4n9', // ID du service
+          'template_jutqirh', // ID du template
           templateParams,
-          'Zyrz4TxDFhS_-4flC'
+          'Zyrz4TxDFhS_-4flC' // clé utilisateur
         )
         .then(
           (result) => {

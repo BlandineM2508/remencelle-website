@@ -3,9 +3,8 @@ import Home from './pages/Home.jsx'
 import Header from './components/Header.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
-
+import Footer from './components/Footer.jsx'
 import Gallery from './pages/Gallery'
-/* import Contact from './pages/Contact'; */
 
 function App() {
   return (
@@ -17,6 +16,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
