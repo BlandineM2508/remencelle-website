@@ -59,52 +59,54 @@ function ContactForm() {
   }
 
   return (
-    <section className="sectionContact">
-      <p className="CatchPhrase">Un projet ? Une idée ? Une folie ?</p>
-      <div className="contactContainer" id="contact">
-        <h2 className="titleContainer">Contactez-moi !</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="formContainer">
-            <label>Nom:</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="name"
-              aria-label="name"
-            />
-            {errors.name && <span>{errors.name}</span>}
-          </div>
-          <div className="formContainer">
-            <label>Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="email"
-              aria-label="email"
-            />
-            {errors.email && <span>{errors.email}</span>}
-          </div>
-          <div className="formContainer">
-            <label>Message:</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className="message"
-              aria-label="message"
-            />
-            {errors.message && <span>{errors.message}</span>}
-          </div>
-          <button type="submit">Envoyer</button>
-          {successMessage && <p className="successMsg">{successMessage}</p>}
-          {errorMessage && <p className="errorMsg">{errorMessage}</p>}
-        </form>
-      </div>
-    </section>
+    <div className="Bg_Contact">
+      <section className="sectionContact">
+        <p className="CatchPhrase">Un projet ? Une idée ? Une folie ?</p>
+        <div className="contactContainer" id="contact">
+          <h2 className="titleContainer">Contactez-moi !</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="formContainer">
+              <label>Nom:</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="name"
+                aria-label="name"
+              />
+              {errors.name && <span>{errors.name}</span>}
+            </div>
+            <div className="formContainer">
+              <label>Email:</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="email"
+                aria-label="email"
+              />
+              {errors.email && <span>{errors.email}</span>}
+            </div>
+            <div className="formContainer">
+              <label>Message:</label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="message"
+                aria-label="message"
+              />
+              {errors.message && <span>{errors.message}</span>}
+            </div>
+            <button type="submit">Envoyer</button>
+            {successMessage && <p className="successMsg">{successMessage}</p>}
+            {errorMessage && <p className="errorMsg">{errorMessage}</p>}
+          </form>
+        </div>
+      </section>
+    </div>
   )
 }
 

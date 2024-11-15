@@ -1,3 +1,10 @@
+.gallery-container {
+  background-image: url('./sheet.jpg');
+  z-index: 0;
+  background-attachment: fixed;
+  background-position: 20%;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 colonnes de taille égale */
@@ -8,10 +15,6 @@
   row-gap: 100px;
   column-gap: 100px;
   padding: 120px;
-  background-image: url('./sheet.jpg');
-  z-index: 0;
-  background-attachment: fixed;
-  background-position: 20%;
 
   .gallery-card {
     opacity: 0;

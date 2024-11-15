@@ -2,7 +2,7 @@ import GalleryGrid from '../components/GalleryGrid'
 
 function Gallery() {
   return (
-    <div className="projects-container">
+    <div className="gallery-container">
       <GalleryGrid />
     </div>
   )
