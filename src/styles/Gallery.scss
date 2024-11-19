@@ -3,6 +3,7 @@
   z-index: 0;
   background-attachment: fixed;
   background-position: 20%;
+  overflow: hidden;
 }
 
 .gallery-grid {
@@ -15,6 +16,7 @@
   row-gap: 100px;
   column-gap: 100px;
   padding: 120px;
+  overflow: hidden;
 
   .gallery-card {
     opacity: 0;
@@ -46,7 +48,7 @@
       box-shadow: 0 8px 10px rgba(0, 0, 0, 0.466);
       border-radius: 10px;
       width: 100%;
-      height: auto;
+      height: 300px;
       position: relative;
       z-index: 2;
       cursor: pointer;

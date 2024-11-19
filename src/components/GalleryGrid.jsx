@@ -5,52 +5,49 @@ import GuitareImg from '../assets/guitare.png'
 
 const gallery = [
   {
-    title: 'Projet 1',
-    description: 'Description du projet 1',
-    youtubeLink: 'https://www.youtube.com/watch?v=example1',
-    thumbnail: 'https://img.youtube.com/vi/example1/0.jpg', // Miniature YouTube
+    title: 'Dépravé',
+    description:
+      'Composition de musique originale pour la bande annonce d’une série d’animation.',
+    youtubeLink: 'https://www.youtube.com/watch?v=c1g5Nd8i7cs',
+    thumbnail: 'https://img.youtube.com/vi/c1g5Nd8i7cs/maxresdefault.jpg', // Miniature YouTube
   },
   {
-    title: 'Projet 2',
-    description: 'Description du projet 2',
+    title: 'Boulange Déracinée',
+    description: 'Création de la bande originale d’un film documentaire.',
     youtubeLink: 'https://www.youtube.com/watch?v=example2',
     thumbnail: 'https://img.youtube.com/vi/example2/0.jpg',
   },
   {
-    title: 'Projet 3',
-    description: 'Description du projet 3',
-    youtubeLink: 'https://www.youtube.com/watch?v=example3',
-    thumbnail: 'https://img.youtube.com/vi/example3/0.jpg',
+    title: 'Témoins',
+    description: 'Composition de musiques additionnelles pour un docu-fiction.',
+    youtubeLink: 'https://www.youtube.com/watch?v=KBMElNXDiRU',
+    thumbnail: 'https://img.youtube.com/vi/KBMElNXDiRU/maxresdefault.jpg',
   },
   {
-    title: 'Projet 1',
-    description: 'Description du projet 1',
-    youtubeLink: 'https://www.youtube.com/watch?v=example1',
-    thumbnail: 'https://img.youtube.com/vi/example1/0.jpg',
+    title: 'A nous une vie plus tard.',
+    description: 'Composition de la bande originale d’un court-métrage.',
+    youtubeLink: 'https://www.youtube.com/watch?v=TxzE_7S9iJs',
+    thumbnail: 'https://img.youtube.com/vi/TxzE_7S9iJs/maxresdefault.jpg',
   },
   {
-    title: 'Projet 2',
-    description: 'Description du projet 2',
+    title: 'Opération : Tigerpool.',
+    description:
+      'Composition de la bande originale d’un court métrage d’animation.',
+    youtubeLink: 'https://www.youtube.com/watch?v=rsyL4D_PuDA',
+    thumbnail: '/miniatureTigerpool.JPG',
+  },
+  {
+    title: 'Arwolg',
+    description:
+      'Création des bandes originales de plusieurs romans de la série Noctrane.',
+    youtubeLink: 'https://www.youtube.com/watch?v=3vTKNjPX6D4',
+    thumbnail: 'https://img.youtube.com/vi/3vTKNjPX6D4/maxresdefault.jpg',
+  },
+  {
+    title: 'Sociorama',
+    description: 'Création d’un générique pour le podcast “Sociorama”',
     youtubeLink: 'https://www.youtube.com/watch?v=example2',
     thumbnail: 'https://img.youtube.com/vi/example2/0.jpg',
-  },
-  {
-    title: 'Projet 3',
-    description: 'Description du projet 3',
-    youtubeLink: 'https://www.youtube.com/watch?v=example3',
-    thumbnail: 'https://img.youtube.com/vi/example3/0.jpg',
-  },
-  {
-    title: 'Projet 2',
-    description: 'Description du projet 2',
-    youtubeLink: 'https://www.youtube.com/watch?v=example2',
-    thumbnail: 'https://img.youtube.com/vi/example2/0.jpg',
-  },
-  {
-    title: 'Projet 3',
-    description: 'Description du projet 3',
-    youtubeLink: 'https://www.youtube.com/watch?v=example3',
-    thumbnail: 'https://img.youtube.com/vi/example3/0.jpg',
   },
 ]
 

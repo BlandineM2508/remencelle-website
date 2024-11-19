@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   padding: 0 100px;
-  opacity: 0; // Initialement invisible
-  animation: fadeIn 0.8s ease-in-out forwards; // Animation de fondu
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
 
   .description {
     margin: 100px 50px;
@@ -14,7 +14,11 @@
     padding: 30px;
   }
 
-  // Animation de fondu en CSS
+  .small {
+    font-size: small;
+    line-height: 0px;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;

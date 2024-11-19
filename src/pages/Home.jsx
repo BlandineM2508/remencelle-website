@@ -8,10 +8,8 @@ function Home() {
   return (
     <div className="home-container">
       <div className="hero">
-        <h1 className="heroName-font">
-          Bienvenue dans l&apos;univers de Remi Encelle
-        </h1>
-        <p>Découvrez mes projets musicaux et suivez mon actualité.</p>
+        <h1 className="heroName-font">Bienvenue !</h1>
+        <p>Découvrez ici un aperçu de mon travail et de mes compositions.</p>
         <div className="social-links">
           <a href="https://www.instagram.com">
             <img className="logo" src={logoInsta} alt="logo instagram" />

@@ -4,13 +4,10 @@ function Biography() {
   return (
     <div className="container">
       <p className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        “ Ma décision de me lancer pleinement dans la musique n’a pas toujours
+        été une partie de plaisir, mais maintenant que j’ai un bon pied dedans
+        et ai participé à de beaux projets, je ne vois pas de raison de ne pas
+        faire un site internet. ” <span className="small">moi-même</span>
       </p>
     </div>
   )
